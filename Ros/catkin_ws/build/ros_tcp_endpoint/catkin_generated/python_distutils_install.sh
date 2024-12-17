@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/user/ARobot/Ros/catkin_ws/src/ros_tcp_endpoint"
+echo_and_run cd "/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/src/ros_tcp_endpoint"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/user/ARobot/Ros/catkin_ws/install/lib/python3/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/user/ARobot/Ros/catkin_ws/install/lib/python3/dist-packages:/home/user/ARobot/Ros/catkin_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/user/ARobot/Ros/catkin_ws/build" \
+    PYTHONPATH="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/install/lib/python3/dist-packages:/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/build" \
     "/usr/bin/python3" \
-    "/home/user/ARobot/Ros/catkin_ws/src/ros_tcp_endpoint/setup.py" \
-    egg_info --egg-base /home/user/ARobot/Ros/catkin_ws/build/ros_tcp_endpoint \
-    build --build-base "/home/user/ARobot/Ros/catkin_ws/build/ros_tcp_endpoint" \
+    "/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/src/ros_tcp_endpoint/setup.py" \
+    egg_info --egg-base /home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/build/ros_tcp_endpoint \
+    build --build-base "/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/build/ros_tcp_endpoint" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/user/ARobot/Ros/catkin_ws/install" --install-scripts="/home/user/ARobot/Ros/catkin_ws/install/bin"
+    --install-layout=deb --prefix="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/install" --install-scripts="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/install/bin"

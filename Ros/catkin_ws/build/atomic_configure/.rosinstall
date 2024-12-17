@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/user/ARobot/Ros/catkin_ws/devel/setup.sh
+    local-name: /home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/devel/setup.sh

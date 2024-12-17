@@ -1,2 +1,2 @@
-moveit_msgs:ros_tcp_endpoint:ur10_moveit_config:ur10_mover:ur_description
--DCATKIN_DEVEL_PREFIX=/home/user/ARobot/Ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/ARobot/Ros/catkin_ws/install -G Unix Makefiles
+moveit_msgs:panda_description:panda_moveit_config:panda_mover:ros_tcp_endpoint
+-DCATKIN_DEVEL_PREFIX=/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/install -G Unix Makefiles

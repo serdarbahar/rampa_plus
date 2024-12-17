@@ -7,5 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export PKG_CONFIG_PATH='/home/user/ws_moveit/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig'
-export PWD='/home/user/ARobot/Ros/catkin_ws/build'
+export CMAKE_PREFIX_PATH="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/build'
+export PYTHONPATH="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/src:$ROS_PACKAGE_PATH"

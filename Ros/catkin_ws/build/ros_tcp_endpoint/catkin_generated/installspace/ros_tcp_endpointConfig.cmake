@@ -67,14 +67,14 @@ set(ros_tcp_endpoint_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ros_tcp_endpoint_SOURCE_PREFIX /home/user/ARobot/Ros/catkin_ws/src/ros_tcp_endpoint)
-  set(ros_tcp_endpoint_DEVEL_PREFIX /home/user/ARobot/Ros/catkin_ws/devel)
+  set(ros_tcp_endpoint_SOURCE_PREFIX /home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/src/ros_tcp_endpoint)
+  set(ros_tcp_endpoint_DEVEL_PREFIX /home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/devel)
   set(ros_tcp_endpoint_INSTALL_PREFIX "")
   set(ros_tcp_endpoint_PREFIX ${ros_tcp_endpoint_DEVEL_PREFIX})
 else()
   set(ros_tcp_endpoint_SOURCE_PREFIX "")
   set(ros_tcp_endpoint_DEVEL_PREFIX "")
-  set(ros_tcp_endpoint_INSTALL_PREFIX /home/user/ARobot/Ros/catkin_ws/install)
+  set(ros_tcp_endpoint_INSTALL_PREFIX /home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/install)
   set(ros_tcp_endpoint_PREFIX ${ros_tcp_endpoint_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/user/ARobot/Ros/catkin_ws/install/lib;/home/user/ARobot/Ros/catkin_ws/devel/lib;/home/user/ws_moveit/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/talha/ProjectClones/RAMPAclone3/rampa_plus/Ros/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
